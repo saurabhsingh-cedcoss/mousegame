@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+    
+    <title>game</title>
+<!--//////////////////////////////////adding external css//////////////////////////////////////  -->
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="show()">
+    <audio  autoplay>
+        <source src="audio1.mp3" >
+      </audio>
+    <div class="container">
+ <!--////////////////////////inserting all the div box inside a back div///////////////////////////  -->
+        <div class="back">
+            <p id="msg"></p>
+            <div class="box" id="0"></div>
+            <div class="box" id="1"></div>
+            <div class="box" id="2"></div>
+            <div class="box" id="3"></div>
+            <div class="box" id="4"></div>
+            <div class="box" id="5"></div>
+            <div class="box" id="6"></div>
+            <div class="box" id="7"></div>
+            <div class="box" id="8"></div>
+            <div class="box" id="9"></div>
+         </div>
+    <div class="quitmsg">
+
+        </div>
+    </div>
+    <p id="score">score : </p>
+    <p id="showscore"></p>
+    <a href="index.html"> <button id="btn1">catch the mouse</button></a>
+
+    <button onclick="quit()" id="btn2"> quit</button>
+</body>
+<!-- ///////////////////////adding external script/////////////////////////////// -->
+<script src="game.js"></script>
+
+</html>

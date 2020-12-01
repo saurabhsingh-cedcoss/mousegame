@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gamja Flower', cursive;
+}
+/* /////////////////////////////////containing all the html///////////////////////////////////////// */
+.container {
+    background-image: url("scene.jpg");
+     width: 100%;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    background-size: cover;
+    padding: 20px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+/* ////////////////////////////////containing all the box of div////////////////////////////// */
+.back {
+    position: absolute;
+    top: 35vh;
+    left: 0.5vw;
+    right: 0.5vw;
+    outline: none;
+    border: none;
+}
+
+.box {
+
+    width: 15vw;
+    height: 25vh;
+    margin: 10px;
+    display: inline-block;
+    outline: none;
+}
+
+.box {
+    background-size: 100% 100%;
+}
+.rat{
+    width: 230px;
+    height: 200px;
+}
+/* ///////////////////////////////////////game logo//////////////////////////// */
+#btn1 {
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    background: none;
+    color: rgb(238, 241, 8);
+    position: absolute;
+    padding: 20px;
+    border: 3px solid rgb(146, 216, 54);
+    background-color: rgb(3, 3, 3);
+    border-radius: 90px;
+    outline: none;
+    left: 40%;
+}
+
+#btn1:hover{
+         background-color: white;
+    color: rgb(1, 5, 1);
+    border-radius: 30px;
+    transition: 1s;
+    background: none;
+}
+/* //////////////////////////////////////////////////quit button/////////////////////////// */
+
+#btn2 {
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    background: none;
+    color: rgb(1, 5, 1);
+    position: absolute;
+    padding: 20px;
+    border: 3px solid white;
+    outline: none;
+    left: 90%;
+}
+
+#btn2:hover {
+    border: 3px solid rgb(146, 216, 54);
+    color: rgb(238, 241, 8);
+    border-radius: 90px;
+    transition: 1s;
+    background-color: rgb(3, 3, 3);
+}
+
+/* ///////////////////////////////////////score////////////////////////////// */
+#score {
+    position: absolute;
+    font-size: 40px;
+}
+
+#showscore {
+    position: absolute;
+    font-size: 40px;
+    left: 20%;
+}
+
+#msg {
+    position: absolute;
+    font-size: 80px;
+    text-align: center;
+    left: 30%;
+}
+
+.quitmsg {
+    position: absolute;
+    font-size: 90px;
+    top: 20%;
+    left: 15%;
+    color: white;
+}
+
+/* ////////////////////////////////////media query///////////////////////////////////// */
+@media(max-width:1000px) and (min-width:600px){
+    #btn1{
+        font-size: 20px;
+        top: 2%;
+
+    }
+    #btn2{
+        left:80%;
+        padding: 20px;
+        border: none;
+    }
+    #showscore{
+        top: 10%;
+        left: 3%;
+    }
+    #score{
+        left: 3%;
+    }
+    #msg{
+        left: 20%;
+    }
+    .back{
+        overflow: hidden;
+    }
+    .container{
+        height: 100vh;
+    }
+    .box{
+        width: 13vw;
+        height: 20vh;
+    }
+    .rat{
+        width: 130px;
+        height: 74px;
+    }
+    #score,#showscore{
+        font-size: 20px;
+    }
+    .quitmsg{
+        top: 40%;
+        left: 2%;
+        font-size: 50px;
+    }
+}
+@media(max-width:600px) and (min-width:200px){
+    #msg{
+        position: unset;
+    }
+    #btn1{
+        top: 2%;
+        padding: 1%;
+        font-size: 18px;
+    }
+    .back{
+        top: 5%;
+    }
+    #btn2{
+        top: 5%;
+        padding: 0%;
+        left:80%;
+        font-size: 20px;
+    }
+    #showscore{
+        top: 5%;
+        font-size: 20px;
+        left: 3%;
+    }
+    #score{
+        font-size: 20px;
+        top: 2%;
+        left: 3%;
+    }
+    #msg{
+        left: 20%;
+        
+    }
+    .back{
+        overflow: hidden;
+    }
+    .container{
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+    .box{
+        width: 23vw;
+        height: 16vh;
+    }
+    .rat{
+        width: 130px;
+        height: 114px;
+    }
+    .quitmsg{
+        font-size: 50px;
+        left: 5%;
+    }
+}

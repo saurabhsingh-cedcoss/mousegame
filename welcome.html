@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <style>
+        .jumbotron{
+            background-color: rgb(187, 230, 0);
+            height: 100vh;
+            text-align: center;
+            padding: 50px;
+        }
+        h1{
+            font-size: 80px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1>welcome to the game</h1>
+        <input type="text" name="name" id="name">
+        <button onclick="addToStorage()">Enter Now</button>
+    </div>
+
+</body>
+<script>
+    function addToStorage(){
+        var newName=document.getElementById('name').value;
+        if (typeof(Storage) !== "undefined") {
+        localStorage.setItem('lsname',newName);}
+        // location.href="game.html";
+    }
+</script>
+</html>
