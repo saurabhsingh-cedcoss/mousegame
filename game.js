@@ -75,6 +75,9 @@ function getCookie(cname) {
 
 function quit() {
     document.querySelector('.container').style.backgroundImage = "url(' 1.webp' )";
+    document.querySelector('.container').style.backgroundSize = "100% 100%";
+    document.querySelector('.container').style.backgroundRepeat = "no-repeat";
+
     document.querySelector('.back').style.display = "none";
     document.querySelector('.quitmsg').innerHTML = "you quit <br> press the icon to start again!";
 }
